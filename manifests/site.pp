@@ -123,9 +123,4 @@ node default {
   # Fish is my favorite shell in the moment. Install it and set it as the
   # default shell.
   include fish
-
-  file { "${boxen::config::srcdir}/my-boxen":
-    ensure => link,
-    target => $boxen::config::repodir
-  }
 }
