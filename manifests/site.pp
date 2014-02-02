@@ -67,6 +67,9 @@ node default {
   include nodejs::v0_8
   include nodejs::v0_10
 
+  # Install the HEAD rbenv version, as this one comes with fish support.
+  class { 'ruby': rbenv_version => HEAD }
+
   # The ruby versions.
   include ruby::1_8_7
   include ruby::1_9_2
