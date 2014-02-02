@@ -52,36 +52,77 @@ Service {
 Homebrew::Formula <| |> -> Package <| |>
 
 node default {
-  # core modules, needed for most things
+  # Core modules, needed for most of the things.
   include dnsmasq
   include git
   include hub
-  include nginx
 
-  # fail if FDE is not enabled
+  # Fail if FDE is not enabled.
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
   }
 
-  # node versions
+  # The node versions.
   include nodejs::v0_6
   include nodejs::v0_8
   include nodejs::v0_10
 
-  # default ruby versions
+  # The ruby versions.
   include ruby::1_8_7
   include ruby::1_9_2
   include ruby::1_9_3
   include ruby::2_0_0
 
-  # common, useful packages
+  # The useful packages.
   package {
     [
       'ack',
       'findutils',
-      'gnu-tar'
+      'gnu-tar',
+      'zsh',
+      'direnv',
+      'autojump',
+      'git',
+      'mercurial',
+      'wget',
+      'coreutils',
+      'lua',
+      'macvim',
+      'tmux',
+      'reattach-to-user-namespace',
+      'ctags',
+      'ag',
+      'imagemagick',
+      'gifsicle',
     ]:
   }
+
+  # Install Skype and Google Chrome through homebrew-cask.
+  include brewcask
+
+  package {
+    [
+      'skype',
+      'google-chrome',
+    ]:
+
+    provider => 'brewcask',
+    require  => Class['brewcask']
+  }
+
+  # Install iTerm2 with the Solarized Light theme.
+  class { 'iterm2::dev': } -> class { 'iterm2::colors::solarized_light': }
+
+  # Install VMware Fusion. All the <3 for VMware.
+  include vmware_fusion
+
+  # I bought alfred for a plasibo based productivity increase. Have it installed
+  # by default.
+  include alfred
+
+  # Fish is my favorite shell in the moment. Install it and set it as the
+  # default shell.
+  include fish
 
   file { "${boxen::config::srcdir}/my-boxen":
     ensure => link,

@@ -51,7 +51,15 @@ github "ruby",       "6.7.2"
 github "stdlib",     "4.1.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
 github "xquartz",    "1.1.0"
-github "osx"
 
-# Optional/custom modules. There are tons available at
-# https://github.com/boxen.
+# Too lazy to lock the versions, now.
+github "fish"
+github "osx"
+github "iterm2"
+github "dropbox"
+github "vagrant"
+github "vmware_fusion"
+github "alfred"
+
+# Use my fork of puppet-brewcask, which fixes its installation.
+mod "brewcask", :git => "git@github.com:gsamokovarov/puppet-brewcask.git"

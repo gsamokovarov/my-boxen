@@ -1,3 +1,15 @@
+GIT
+  remote: git@github.com:gsamokovarov/puppet-brewcask.git
+  ref: master
+  sha: 0897c799576eebc645cb755af759c0568897bb22
+  specs:
+    brewcask (0.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-alfred
+  specs:
+    alfred (1.1.7)
+
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
@@ -7,6 +19,16 @@ GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-dropbox
+  specs:
+    dropbox (1.2.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-fish
+  specs:
+    fish (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-foreman
@@ -39,9 +61,9 @@ GITHUBTARBALL
     hub (1.0.3)
 
 GITHUBTARBALL
-  remote: boxen/puppet-nginx
+  remote: boxen/puppet-iterm2
   specs:
-    nginx (1.4.2)
+    iterm2 (1.0.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
@@ -52,6 +74,11 @@ GITHUBTARBALL
   remote: boxen/puppet-openssl
   specs:
     openssl (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (2.2.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-phantomjs
@@ -79,6 +106,16 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-vagrant
+  specs:
+    vagrant (3.0.4)
+
+GITHUBTARBALL
+  remote: boxen/puppet-vmware_fusion
+  specs:
+    vmware_fusion (1.1.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.1.0)
@@ -94,8 +131,12 @@ GITHUBTARBALL
     stdlib (4.1.0)
 
 DEPENDENCIES
+  alfred (>= 0)
   boxen (= 3.3.4)
+  brewcask (>= 0)
   dnsmasq (= 1.0.1)
+  dropbox (>= 0)
+  fish (>= 0)
   foreman (= 1.0.0)
   gcc (= 2.0.1)
   git (= 1.2.5)
@@ -103,14 +144,17 @@ DEPENDENCIES
   homebrew (= 1.5.1)
   hub (= 1.0.3)
   inifile (= 1.0.0)
-  nginx (= 1.4.2)
+  iterm2 (>= 0)
   nodejs (= 3.3.0)
   openssl (= 1.0.0)
+  osx (>= 0)
   phantomjs (= 2.0.2)
   pkgconfig (= 1.0.0)
   repository (= 2.2.0)
   ruby (= 6.7.2)
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
+  vagrant (>= 0)
+  vmware_fusion (>= 0)
   xquartz (= 1.1.0)
 
