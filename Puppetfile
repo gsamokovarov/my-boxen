@@ -60,6 +60,7 @@ github "dropbox"
 github "vagrant"
 github "vmware_fusion"
 github "alfred"
+github "viscosity"
 
 # Use my fork of puppet-brewcask, which fixes its installation.
 mod "brewcask", :git => "git@github.com:gsamokovarov/puppet-brewcask.git"

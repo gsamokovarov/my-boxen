@@ -123,6 +123,9 @@ node default {
   # by default.
   include alfred
 
+  # Include viscosity as I use for a couple of VPN connections.
+  include viscosity
+
   # Fish is my favorite shell in the moment. Install it and set it as the
   # default shell.
   include fish
