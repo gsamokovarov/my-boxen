@@ -119,6 +119,11 @@ node default {
   # Install VMware Fusion. All the <3 for VMware.
   include vmware_fusion
 
+  # Install vagrant with VMware Fusion support. I'll add the license manually.
+  include vagrant
+
+  vagrant::plugin { 'vagrant-vmware-fusion': }
+
   # I bought alfred for a plasibo based productivity increase. Have it installed
   # by default.
   include alfred
