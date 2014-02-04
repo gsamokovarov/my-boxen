@@ -90,7 +90,6 @@ node default {
       'wget',
       'coreutils',
       'lua',
-      'macvim',
       'tmux',
       'reattach-to-user-namespace',
       'ctags',
@@ -98,6 +97,12 @@ node default {
       'imagemagick',
       'gifsicle',
     ]:
+  }
+
+  # Install MacVim with Lua support. The brew provider reads the
+  # install_options.
+  package { 'macvim':
+    install_options => ['--override-system-vim', '--with-lua']
   }
 
   # Install Skype and Google Chrome through homebrew-cask.
