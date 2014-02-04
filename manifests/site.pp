@@ -108,12 +108,12 @@ node default {
       'skype',
       'google-chrome',
     ]:
-
-    provider => 'brewcask',
-    require  => Class['brewcask']
+      provider => 'brewcask',
+      require  => Class['brewcask']
   }
 
-  # Install iTerm2 with the Solarized Light theme.
+  # Install iTerm2 with the Solarized Light theme. You need to explicitly
+  # specify the dependency, as `iterm2::colors::solarized_light` doesn't do it.
   class { 'iterm2::dev': } -> class { 'iterm2::colors::solarized_light': }
 
   # Install VMware Fusion. All the <3 for VMware.
@@ -124,8 +124,8 @@ node default {
 
   vagrant::plugin { 'vagrant-vmware-fusion': }
 
-  # I bought alfred for a plasibo based productivity increase. Have it installed
-  # by default.
+  # I bought alfred for a plasibo based productivity increase. Have it
+  # installed by default.
   include alfred
 
   # Include viscosity as I use for a couple of VPN connections.
