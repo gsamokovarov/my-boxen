@@ -62,7 +62,7 @@ node default {
     fail('Please enable full disk encryption and try again')
   }
 
-  # The useful packages.
+  # The useful packages from Homebrew.
   package {
     [
       'ack',
@@ -91,13 +91,14 @@ node default {
     install_options => ['--override-system-vim', '--with-lua']
   }
 
-  # Install Skype and Google Chrome through homebrew-cask.
+  # Install Skype and Google Chrome, and XQuartz through homebrew-cask.
   include brewcask
 
   package {
     [
       'skype',
       'google-chrome',
+      'xquartz',
     ]:
       provider => 'brewcask',
       require  => Class['brewcask']
