@@ -1,7 +1,7 @@
 GIT
-  remote: git@github.com:gsamokovarov/puppet-brewcask.git
+  remote: git@github.com:phinze/puppet-brewcask.git
   ref: master
-  sha: 0897c799576eebc645cb755af759c0568897bb22
+  sha: 9e4147b92997a984bc26f991289b68fd0fe3d52a
   specs:
     brewcask (0.0.1)
 
@@ -56,19 +56,9 @@ GITHUBTARBALL
     homebrew (1.5.1)
 
 GITHUBTARBALL
-  remote: boxen/puppet-hub
-  specs:
-    hub (1.0.3)
-
-GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
     iterm2 (1.0.6)
-
-GITHUBTARBALL
-  remote: boxen/puppet-nodejs
-  specs:
-    nodejs (3.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
@@ -94,11 +84,6 @@ GITHUBTARBALL
   remote: boxen/puppet-repository
   specs:
     repository (2.2.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-ruby
-  specs:
-    ruby (6.7.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-sudo
@@ -142,16 +127,13 @@ DEPENDENCIES
   git (= 1.2.5)
   go (= 1.0.0)
   homebrew (= 1.5.1)
-  hub (= 1.0.3)
   inifile (= 1.0.0)
   iterm2 (>= 0)
-  nodejs (= 3.3.0)
   openssl (= 1.0.0)
   osx (>= 0)
   phantomjs (= 2.0.2)
   pkgconfig (= 1.0.0)
   repository (= 2.2.0)
-  ruby (= 6.7.2)
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
   vagrant (>= 0)
