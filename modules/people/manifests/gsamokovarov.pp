@@ -1,7 +1,17 @@
 class people::gsamokovarov {
   $home = "/Users/${::boxen_user}"
 
-  # The useful packages from Homebrew.
+  file { "${home}/Development":
+    ensure => directory
+  }
+
+  repository { "${home}/Development/.files":
+    source => 'gsamokovarov/.files'
+  }
+
+  # Packages
+  # --------
+
   package {
     [
       'direnv',
