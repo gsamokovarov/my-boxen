@@ -85,7 +85,7 @@ class people::gsamokovarov {
 
   include osx::dock::autohide
   class { 'osx::dock::position': position => left }
-  class { 'osx::dock::icon_size': size => 36 }
+  class { 'osx::dock::icon_size': size => 62 }
 
   include osx::finder::show_all_on_desktop
   include osx::finder::empty_trash_securely
