@@ -98,4 +98,32 @@ class people::gsamokovarov {
   include osx::disable_app_quarantine
   include osx::no_network_dsstores
   include osx::software_update
+
+  boxen::osx_defaults {
+    'Enable the menu bar transparency':
+      user   => $::boxen_user,
+      key    => 'AppleEnableMenuBarTransparency',
+      domain => 'NSGlobalDomain',
+      value  => true;
+
+    'Use all F1, F2, etc. keys as standard function keys.':
+      user   => $::boxen_user,
+      key    => 'com.apple.keyboard.fnState',
+      domain => 'NSGlobalDomain',
+      value  => true;
+
+    'Display the battery charge in a percentage':
+      user   => $::boxen_user,
+      key    => 'ShowPercent',
+      domain => 'com.apple.menuextra.battery',
+      type   => 'string',
+      value  => 'YES';
+
+    'Disable mouse (not trackpad) acceleration':
+      user   => $::boxen_user,
+      key    => 'com.apple.mouse.scaling',
+      domain => '.GlobalPreferences',
+      type   => 'int',
+      value  => 1;
+  }
 }
