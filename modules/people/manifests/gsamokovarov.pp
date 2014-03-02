@@ -1,6 +1,5 @@
 class people::gsamokovarov {
   $user = $boxen_user
-  $home = "/Users/${::boxen_user}"
 
   # Repositories
   # ------------
@@ -76,7 +75,6 @@ class people::gsamokovarov {
   # Force file shares to use an older Samba version. My OpenELEC media center
   # can't open the new Samba shares that came by default with Mavericks.
   file { "${home}/Library/Preferences/nsmb.conf":
-    owner  => $user,
     source => 'puppet:///modules/people/gsamokovarov/nsmb.conf'
   }
 
