@@ -114,7 +114,7 @@ class people::gsamokovarov {
       domain => 'NSGlobalDomain',
       value  => true;
 
-    'Use all F1, F2, etc. keys as standard function keys.':
+    'Use all F1, F2, etc. keys as standard function keys':
       user   => $::boxen_user,
       key    => 'com.apple.keyboard.fnState',
       domain => 'NSGlobalDomain',
@@ -133,5 +133,11 @@ class people::gsamokovarov {
       domain => '.GlobalPreferences',
       type   => 'int',
       value  => 1;
+
+    'Allow guests to connect to shared folders':
+      user   => $::boxen_user,
+      key    => 'AllowGuestAccess',
+      domain => '/Library/Preferences/SystemConfiguration/com.apple.smb.server.plist',
+      value  => true;
   }
 }
