@@ -56,6 +56,7 @@ github "dropbox"
 github "vagrant"
 github "vmware_fusion"
 github "alfred"
+github "flux"
 github "viscosity"
 
 mod "brewcask", :git => "git@github.com:phinze/puppet-brewcask.git"

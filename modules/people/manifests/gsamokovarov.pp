@@ -65,6 +65,9 @@ class people::gsamokovarov {
   # Include viscosity as I use for a couple of VPN connections.
   include viscosity
 
+  # Flux is great, lowering the blue during the night helps a lot.
+  include flux
+
   # Fish is my favorite shell in the moment. Install it and set it as the
   # default shell.
   include fish
