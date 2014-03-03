@@ -77,4 +77,14 @@ require "boxen/cli"
 
 # Okay, let's run this thing.
 
+# I like managing my own rbenv, so Boxen, please, shut up!
+Boxen::Preflight::Rbenv.class_eval do
+  def ok?() true end
+end
+
+# And I'm using fish, you're env doesn't source on it.
+Boxen::Postflight::Active.class_eval do
+  def ok?() true end
+end
+
 exit Boxen::CLI.run ARGV
