@@ -68,6 +68,9 @@ class people::gsamokovarov {
   # Flux is great, lowering the blue during the night helps a lot.
   include flux
 
+  # I'm probably one of the 12 people that enjoy Knock to Unlock.
+  include knock
+
   # Fish is my favorite shell in the moment. Install it and set it as the
   # default shell.
   include fish
