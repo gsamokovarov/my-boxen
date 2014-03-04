@@ -138,6 +138,12 @@ class people::gsamokovarov {
       type   => 'int',
       value  => 1;
 
+    'Disable guest login to the machine itself':
+      user   => $::boxen_user,
+      key    => 'GuestEnabled',
+      domain => '/Library/Preferences/com.apple.loginwindow.plist',
+      value  => false;
+
     'Allow guests to connect to shared folders':
       user   => $::boxen_user,
       key    => 'AllowGuestAccess',
