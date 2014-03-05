@@ -1,5 +1,6 @@
 class people::gsamokovarov {
   $user = $boxen_user
+  $home = "/Users/$user"
 
   # Repositories
   # ------------
