@@ -23,6 +23,11 @@ GITHUBTARBALL
     boxen (3.3.4)
 
 GITHUBTARBALL
+  remote: boxen/puppet-caffeine
+  specs:
+    caffeine (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.1)
@@ -131,6 +136,7 @@ DEPENDENCIES
   alfred (>= 0)
   boxen (= 3.3.4)
   brewcask (>= 0)
+  caffeine (>= 0)
   dnsmasq (= 1.0.1)
   dropbox (>= 0)
   fish (>= 0)

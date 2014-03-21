@@ -72,6 +72,9 @@ class people::gsamokovarov {
   # I'm probably one of the 12 people that enjoy Knock to Unlock.
   include knock
 
+  # Stops the laptop from sleeping on deploys. Live saver.
+  include caffeine
+
   # Fish is my favorite shell in the moment. Install it and set it as the
   # default shell.
   include fish

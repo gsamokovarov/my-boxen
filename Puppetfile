@@ -58,6 +58,7 @@ github "vmware_fusion"
 github "alfred"
 github "flux"
 github "viscosity"
+github "caffeine"
 
 mod "knock", :git => "git@github.com:gsamokovarov/puppet-knock.git"
 mod "brewcask", :git => "git@github.com:phinze/puppet-brewcask.git"
