@@ -36,12 +36,12 @@ class people::gsamokovarov {
     install_options => ['--override-system-vim', '--with-lua']
   }
 
-  # Install Skype and Google Chrome, and XQuartz through homebrew-cask.
   package {
     [
       'skype',
       'google-chrome',
       'xquartz',
+      'amethyst'
     ]:
       provider => 'brewcask',
       require  => Class['brewcask']
