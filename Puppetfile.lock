@@ -1,7 +1,7 @@
 GIT
   remote: git@github.com:gsamokovarov/puppet-knock.git
   ref: master
-  sha: 649d4e510d30c30413c1303081f1bed064b023fe
+  sha: 4b0c357e7d24e422c9118b88905231de1345ba01
   specs:
     knock (0.0.1)
 
@@ -103,6 +103,11 @@ GITHUBTARBALL
     repository (2.2.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-sourcetree
+  specs:
+    sourcetree (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
@@ -154,6 +159,7 @@ DEPENDENCIES
   phantomjs (>= 0)
   pkgconfig (>= 0)
   repository (>= 0)
+  sourcetree (>= 0)
   stdlib (>= 0)
   sudo (>= 0)
   vagrant (>= 0)

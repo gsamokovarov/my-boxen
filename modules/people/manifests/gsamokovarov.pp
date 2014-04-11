@@ -75,6 +75,9 @@ class people::gsamokovarov {
   # Stops the laptop from sleeping on deploys. Live saver.
   include caffeine
 
+  # Pretty nice graphical Git client.
+  include sourcetree
+
   # Fish is my favorite shell in the moment. Install it and set it as the
   # default shell.
   include fish
