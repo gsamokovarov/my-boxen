@@ -1,5 +1,5 @@
 class people::gsamokovarov {
-  $user = $boxen_user
+  $user = $::boxen_user
   $home = "/Users/$user"
 
   # Repositories
@@ -156,5 +156,17 @@ class people::gsamokovarov {
       key    => 'AllowGuestAccess',
       domain => '/Library/Preferences/SystemConfiguration/com.apple.smb.server.plist',
       value  => true;
+
+    'Disable the dashboard':
+      user   => $::boxen_user,
+      key    => 'mcx-disabled',
+      domain => 'com.apple.dashboard',
+      value  => true;
+
+    "Don't show Dashboard as a Space":
+      user   => $::boxen_user,
+      key    => 'dashboard-in-overlay',
+      domain => 'com.apple.dock',
+      value  => 'true';
   }
 }
