@@ -120,51 +120,43 @@ class people::gsamokovarov {
 
   boxen::osx_defaults {
     'Enable the menu bar transparency':
-      user   => $::boxen_user,
       key    => 'AppleEnableMenuBarTransparency',
       domain => 'NSGlobalDomain',
       value  => true;
 
     'Use all F1, F2, etc. keys as standard function keys':
-      user   => $::boxen_user,
       key    => 'com.apple.keyboard.fnState',
       domain => 'NSGlobalDomain',
       value  => true;
 
     'Display the battery charge in a percentage':
-      user   => $::boxen_user,
       key    => 'ShowPercent',
       domain => 'com.apple.menuextra.battery',
       type   => 'string',
       value  => 'YES';
 
     'Disable mouse (not trackpad) acceleration':
-      user   => $::boxen_user,
       key    => 'com.apple.mouse.scaling',
       domain => '.GlobalPreferences',
       type   => 'int',
       value  => 1;
 
     'Disable guest login to the machine itself':
-      user   => $::boxen_user,
       key    => 'GuestEnabled',
       domain => '/Library/Preferences/com.apple.loginwindow.plist',
       value  => false;
 
     'Allow guests to connect to shared folders':
-      user   => $::boxen_user,
       key    => 'AllowGuestAccess',
       domain => '/Library/Preferences/SystemConfiguration/com.apple.smb.server.plist',
       value  => true;
 
     'Disable the dashboard':
-      user   => $::boxen_user,
       key    => 'mcx-disabled',
       domain => 'com.apple.dashboard',
       value  => true;
 
     "Don't show Dashboard as a Space":
-      user   => $::boxen_user,
       key    => 'dashboard-in-overlay',
       domain => 'com.apple.dock',
       value  => 'true';

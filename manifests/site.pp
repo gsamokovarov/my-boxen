@@ -48,6 +48,10 @@ Service {
 
 Homebrew::Formula <| |> -> Package <| |>
 
+Boxen::Osx_defaults {
+  user => $::boxen_user
+}
+
 node default {
   # Core modules, needed for most of the things.
   include dnsmasq
