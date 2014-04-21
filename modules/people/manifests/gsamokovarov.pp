@@ -40,12 +40,14 @@ class people::gsamokovarov {
     [
       'skype',
       'google-chrome',
-      'xquartz',
       'amethyst'
     ]:
       provider => 'brewcask',
       require  => Class['brewcask']
   }
+
+  # You know, for X apps.
+  include xquartz
 
   # Install iTerm2 with the Solarized Light theme. You need to explicitly
   # specify the dependency, as `iterm2::colors::solarized_light` doesn't do it.

@@ -60,6 +60,7 @@ github "flux"
 github "viscosity"
 github "caffeine"
 github "sourcetree"
+github "xquartz"
 
 mod "iterm2", :git => "git@github.com:gsamokovarov/puppet-iterm2.git"
 mod "knock", :git => "git@github.com:gsamokovarov/puppet-knock.git"
