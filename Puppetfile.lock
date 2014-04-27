@@ -80,6 +80,11 @@ GITHUBTARBALL
     homebrew (1.9.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-onepassword
+  specs:
+    onepassword (1.1.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-openssl
   specs:
     openssl (1.0.0)
@@ -167,6 +172,7 @@ DEPENDENCIES
   iterm2 (>= 0)
   knock (>= 0)
   module-data (= 0.0.3)
+  onepassword (>= 0)
   openssl (>= 0)
   osx (>= 0)
   phantomjs (>= 0)

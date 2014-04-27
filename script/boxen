@@ -82,7 +82,7 @@ Boxen::Preflight::Rbenv.class_eval do
   def ok?() true end
 end
 
-# And I'm using fish, you're env doesn't source on it.
+# And I'm using fish, your env doesn't source on it.
 Boxen::Postflight::Active.class_eval do
   def ok?() true end
 end

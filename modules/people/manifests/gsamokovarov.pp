@@ -46,6 +46,9 @@ class people::gsamokovarov {
       require  => Class['brewcask']
   }
 
+  # Manage my passwords with 1Password.
+  include onepassword
+
   # You know, for X apps.
   include xquartz
 
