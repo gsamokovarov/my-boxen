@@ -40,7 +40,6 @@ class people::gsamokovarov {
     [
       'skype',
       'google-chrome',
-      'amethyst'
     ]:
       provider => 'brewcask',
       require  => Class['brewcask']
