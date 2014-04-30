@@ -163,6 +163,13 @@ class people::gsamokovarov {
     "Don't show Dashboard as a Space":
       key    => 'dashboard-in-overlay',
       domain => 'com.apple.dock',
-      value  => 'true';
+      value  => true;
+
+    'Increase Time Machine backup interval to 6 hours':
+      key    => 'StartInterval',
+      domain => '/System/Library/LaunchDaemons/com.apple.backupd-auto.plist',
+      user   => 'root',
+      type   => 'int',
+      value  => '21600';
   }
 }
