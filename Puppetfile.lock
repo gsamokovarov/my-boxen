@@ -6,13 +6,6 @@ GIT
     iterm2 (0.0.1)
 
 GIT
-  remote: git@github.com:gsamokovarov/puppet-knock.git
-  ref: master
-  sha: 4b0c357e7d24e422c9118b88905231de1345ba01
-  specs:
-    knock (0.0.1)
-
-GIT
   remote: git@github.com:phinze/puppet-brewcask.git
   ref: master
   sha: 9e4147b92997a984bc26f991289b68fd0fe3d52a
@@ -78,6 +71,11 @@ GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.9.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-knock
+  specs:
+    knock (0.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-onepassword
