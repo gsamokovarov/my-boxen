@@ -32,8 +32,10 @@ class people::gsamokovarov {
     ]:
   }
 
+  # Install HEAD MacVim to get the latest rendering optimizations. They help a
+  # bit with the terminal Vim.
   package { 'macvim':
-    install_options => ['--override-system-vim', '--with-lua']
+    install_options => ['--head', '--override-system-vim', '--with-lua']
   }
 
   package {
