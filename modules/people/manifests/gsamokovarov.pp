@@ -29,6 +29,7 @@ class people::gsamokovarov {
       'ag',
       'imagemagick',
       'gifsicle',
+      'moreutils',
     ]:
   }
 
