@@ -78,6 +78,11 @@ GITHUBTARBALL
     homebrew (1.9.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-java
+  specs:
+    java (1.5.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-knock
   specs:
     knock (0.1.0)
@@ -174,6 +179,7 @@ DEPENDENCIES
   homebrew (>= 0)
   inifile (>= 0)
   iterm2 (>= 0)
+  java (>= 0)
   knock (>= 0)
   module-data (= 0.0.3)
   onepassword (>= 0)

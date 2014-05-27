@@ -89,7 +89,8 @@ class people::gsamokovarov {
   # default shell.
   include fish
 
-  # Oh, the irony...
+  # Include Java 7 and Eclipse Kepler.
+  include java
   include eclipse::java
 
   # Settings
