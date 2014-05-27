@@ -38,6 +38,11 @@ GITHUBTARBALL
     dropbox (1.2.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-eclipse
+  specs:
+    eclipse (2.3.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-fish
   specs:
     fish (1.0.0)
@@ -159,6 +164,7 @@ DEPENDENCIES
   caffeine (>= 0)
   dnsmasq (>= 0)
   dropbox (>= 0)
+  eclipse (>= 0)
   fish (>= 0)
   flux (>= 0)
   foreman (>= 0)

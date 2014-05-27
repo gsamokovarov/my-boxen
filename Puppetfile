@@ -67,6 +67,7 @@ github "sourcetree"
 github "xquartz"
 github "onepassword"
 github "knock"
+github "eclipse"
 
 mod "iterm2", :git => "git@github.com:gsamokovarov/puppet-iterm2.git"
 mod "brewcask", :git => "git@github.com:phinze/puppet-brewcask.git"

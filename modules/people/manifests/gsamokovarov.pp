@@ -89,6 +89,9 @@ class people::gsamokovarov {
   # default shell.
   include fish
 
+  # Oh, the irony...
+  include eclipse::java
+
   # Settings
   # --------
 
