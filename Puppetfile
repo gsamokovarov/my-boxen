@@ -69,6 +69,8 @@ github "onepassword"
 github "knock"
 github "eclipse"
 github "java"
+github "licecap"
 
+mod "pcloud", :git => "git@github.com:gsamokovarov/puppet-pcloud.git"
 mod "iterm2", :git => "git@github.com:gsamokovarov/puppet-iterm2.git"
 mod "brewcask", :git => "git@github.com:phinze/puppet-brewcask.git"

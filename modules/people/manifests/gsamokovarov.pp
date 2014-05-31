@@ -51,6 +51,9 @@ class people::gsamokovarov {
   # Manage my passwords with 1Password.
   include onepassword
 
+  # Great alternative for Dropbox, giving you more space for free.
+  include pcloud
+
   # You know, for X apps.
   include xquartz
 
@@ -92,6 +95,9 @@ class people::gsamokovarov {
   # Include Java 7 and Eclipse Kepler.
   include java
   include eclipse::java
+
+  # Easily record gifs.
+  include licecap
 
   # Settings
   # --------
