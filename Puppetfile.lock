@@ -130,6 +130,11 @@ GITHUBTARBALL
     repository (2.3.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-slate
+  specs:
+    slate (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-sourcetree
   specs:
     sourcetree (1.0.0)
@@ -202,6 +207,7 @@ DEPENDENCIES
   phantomjs (>= 0)
   pkgconfig (>= 0)
   repository (>= 0)
+  slate (>= 0)
   sourcetree (>= 0)
   stdlib (>= 0)
   sudo (>= 0)

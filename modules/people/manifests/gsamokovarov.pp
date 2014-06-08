@@ -99,6 +99,9 @@ class people::gsamokovarov {
   # Easily record gifs.
   include licecap
 
+  # A hacker friendly OSX window manager.
+  include slate
+
   # Settings
   # --------
 
