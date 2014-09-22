@@ -71,6 +71,7 @@ github "eclipse"
 github "java"
 github "licecap"
 github "slate"
+github "slack"
 
 mod "pcloud", :git => "git@github.com:gsamokovarov/puppet-pcloud.git"
 mod "iterm2", :git => "git@github.com:gsamokovarov/puppet-iterm2.git"
