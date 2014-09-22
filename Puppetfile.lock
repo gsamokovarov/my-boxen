@@ -1,33 +1,19 @@
 GIT
-  remote: git@github.com:gsamokovarov/puppet-iterm2.git
-  ref: master
-  sha: 30ad50d8f1b5bc237481e404b23b17760786bff5
-  specs:
-    iterm2 (0.0.1)
-
-GIT
-  remote: git@github.com:gsamokovarov/puppet-pcloud.git
-  ref: master
-  sha: ce731faf8992c76661b837dc5d49a23086e1bd05
-  specs:
-    pcloud (0.0.1)
-
-GIT
   remote: git@github.com:phinze/puppet-brewcask.git
   ref: master
-  sha: 9e4147b92997a984bc26f991289b68fd0fe3d52a
+  sha: f8c4a9955cccf453e7070bb86d3a0fe07fbb94d8
   specs:
     brewcask (0.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-alfred
   specs:
-    alfred (1.1.8)
+    alfred (1.3.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.4.2)
+    boxen (3.6.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-caffeine
@@ -37,17 +23,17 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
-    dnsmasq (1.0.1)
+    dnsmasq (2.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-dropbox
   specs:
-    dropbox (1.2.0)
+    dropbox (1.4.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-eclipse
   specs:
-    eclipse (2.3.0)
+    eclipse (2.4.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-fish
@@ -67,27 +53,32 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
-    gcc (2.0.99)
+    gcc (2.2.0.beta3)
 
 GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (2.3.0)
+    git (2.6.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-go
   specs:
-    go (2.0.1)
+    go (2.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.9.0)
+    homebrew (1.9.5)
+
+GITHUBTARBALL
+  remote: boxen/puppet-iterm2
+  specs:
+    iterm2 (1.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-java
   specs:
-    java (1.5.0)
+    java (1.7.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-knock
@@ -102,7 +93,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-onepassword
   specs:
-    onepassword (1.1.0)
+    onepassword (1.1.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
@@ -112,7 +103,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
-    osx (2.2.2)
+    osx (2.7.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-pcloud
+  specs:
+    pcloud (0.1.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-phantomjs
@@ -152,7 +148,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (3.0.7)
+    vagrant (3.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-viscosity
@@ -162,31 +158,31 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vmware_fusion
   specs:
-    vmware_fusion (1.1.0)
+    vmware_fusion (1.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
-    xquartz (1.1.1)
+    xquartz (1.2.0)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
-    inifile (1.0.3)
+    inifile (1.1.3)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
-    stdlib (4.1.0)
+    stdlib (4.3.2)
 
 GITHUBTARBALL
   remote: ripienaar/puppet-module-data
   specs:
-    module-data (0.0.3)
+    module_data (0.0.3)
 
 DEPENDENCIES
   alfred (>= 0)
-  boxen (= 3.4.2)
+  boxen (= 3.6.2)
   brewcask (>= 0)
   caffeine (>= 0)
   dnsmasq (>= 0)
@@ -204,7 +200,7 @@ DEPENDENCIES
   java (>= 0)
   knock (>= 0)
   licecap (>= 0)
-  module-data (= 0.0.3)
+  module_data (= 0.0.3)
   onepassword (>= 0)
   openssl (>= 0)
   osx (>= 0)

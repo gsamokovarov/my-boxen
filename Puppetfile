@@ -29,11 +29,11 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.4.2"
+github "boxen", "3.6.2"
 
 # Support for default hiera data in modules
 
-github "module-data", "0.0.3", :repo => "ripienaar/puppet-module-data"
+github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -72,7 +72,7 @@ github "java"
 github "licecap"
 github "slate"
 github "slack"
+github "pcloud"
+github "iterm2"
 
-mod "pcloud", :git => "git@github.com:gsamokovarov/puppet-pcloud.git"
-mod "iterm2", :git => "git@github.com:gsamokovarov/puppet-iterm2.git"
 mod "brewcask", :git => "git@github.com:phinze/puppet-brewcask.git"
