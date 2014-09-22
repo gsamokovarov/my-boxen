@@ -71,7 +71,6 @@ github "eclipse"
 github "java"
 github "licecap"
 github "slate"
-github "slack"
 github "pcloud"
 github "iterm2"
 
