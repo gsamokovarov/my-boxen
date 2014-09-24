@@ -158,7 +158,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
-    xquartz (1.2.0)
+    xquartz (1.2.1)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
