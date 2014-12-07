@@ -145,10 +145,10 @@ class people::gsamokovarov {
       domain => 'NSGlobalDomain',
       value  => true;
 
-    'Use all F1, F2, etc. keys as standard function keys':
+    'Use all F1, F2, etc. keys as media function keys':
       key    => 'com.apple.keyboard.fnState',
       domain => 'NSGlobalDomain',
-      value  => true;
+      value  => false;
 
     'Display the battery charge in a percentage':
       key    => 'ShowPercent',
