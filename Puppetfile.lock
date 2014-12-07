@@ -1,19 +1,19 @@
 GIT
   remote: git@github.com:phinze/puppet-brewcask.git
   ref: master
-  sha: f8c4a9955cccf453e7070bb86d3a0fe07fbb94d8
+  sha: 23768e2d52400ddd03efac6e653db6b7fd7c68fd
   specs:
     brewcask (0.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-alfred
   specs:
-    alfred (1.3.1)
+    alfred (1.4.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.6.2)
+    boxen (3.7.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-caffeine
@@ -23,17 +23,17 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
-    dnsmasq (2.0.0)
+    dnsmasq (2.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-dropbox
   specs:
-    dropbox (1.4.0)
+    dropbox (1.4.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-eclipse
   specs:
-    eclipse (2.4.1)
+    eclipse (2.5.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-fish
@@ -58,7 +58,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (2.6.0)
+    git (2.7.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-go
@@ -68,17 +68,17 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.9.5)
+    homebrew (1.9.8)
 
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
-    iterm2 (1.2.0)
+    iterm2 (1.2.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-java
   specs:
-    java (1.7.0)
+    java (1.7.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-knock
@@ -93,7 +93,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-onepassword
   specs:
-    onepassword (1.1.2)
+    onepassword (1.1.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
@@ -103,7 +103,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
-    osx (2.7.1)
+    osx (2.8.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-pcloud
@@ -163,12 +163,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
-    inifile (1.1.3)
+    inifile (1.2.0)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
-    stdlib (4.3.2)
+    stdlib (4.4.0)
 
 GITHUBTARBALL
   remote: ripienaar/puppet-module-data
@@ -177,7 +177,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   alfred (>= 0)
-  boxen (= 3.6.2)
+  boxen (= 3.7.0)
   brewcask (>= 0)
   caffeine (>= 0)
   dnsmasq (>= 0)
