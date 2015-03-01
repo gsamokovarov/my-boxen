@@ -37,7 +37,7 @@ class people::gsamokovarov {
   # Install HEAD vim to get the latest rendering optimizations. They help a
   # bit with the terminal Vim.
   package { 'vim':
-    install_options => ['--head', '--override-system-vim', '--with-lua']
+    install_options => ['--HEAD', '--override-system-vim', '--with-lua']
   }
 
   package {
@@ -93,9 +93,8 @@ class people::gsamokovarov {
   # default shell.
   include fish
 
-  # Include Java 7 and Eclipse Kepler.
+  # Include Java 7.
   include java
-  include eclipse::java
 
   # Easily record gifs.
   include licecap

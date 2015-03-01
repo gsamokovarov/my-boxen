@@ -73,5 +73,4 @@ github "licecap"
 github "slate"
 github "pcloud"
 github "iterm2"
-
-mod "brewcask", :git => "git@github.com:phinze/puppet-brewcask.git"
+github "brewcask"
