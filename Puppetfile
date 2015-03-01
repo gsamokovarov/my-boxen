@@ -23,13 +23,13 @@ end
 
 # Shortcut for a module under development
 def dev(name, *args)
-  mod name, :path => "#{ENV['HOME']}/src/boxen/puppet-#{name}"
+  mod "puppet-#{name}", :path => "#{ENV['HOME']}/src/boxen/puppet-#{name}"
 end
 
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.7.0"
+github "boxen", "3.10.1"
 
 # Support for default hiera data in modules
 

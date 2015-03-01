@@ -1,7 +1,7 @@
 GIT
   remote: git@github.com:phinze/puppet-brewcask.git
   ref: master
-  sha: 23768e2d52400ddd03efac6e653db6b7fd7c68fd
+  sha: d3a96ee11f87847b10348abb44b5e40f7fd6de5c
   specs:
     brewcask (0.0.1)
 
@@ -13,7 +13,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.7.0)
+    boxen (3.10.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-caffeine
@@ -58,7 +58,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (2.7.0)
+    git (2.7.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-go
@@ -73,12 +73,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
-    iterm2 (1.2.2)
+    iterm2 (1.2.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-java
   specs:
-    java (1.7.1)
+    java (1.8.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-knock
@@ -143,7 +143,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (3.2.0)
+    vagrant (3.2.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-viscosity
@@ -168,7 +168,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
-    stdlib (4.4.0)
+    stdlib (4.5.1)
 
 GITHUBTARBALL
   remote: ripienaar/puppet-module-data
@@ -177,7 +177,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   alfred (>= 0)
-  boxen (= 3.7.0)
+  boxen (= 3.10.1)
   brewcask (>= 0)
   caffeine (>= 0)
   dnsmasq (>= 0)

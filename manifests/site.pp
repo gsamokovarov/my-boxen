@@ -8,7 +8,7 @@ Exec {
   user        => $boxen_user,
 
   path => [
-    "${boxen::config::home}/homebrew/bin",
+    "${boxen::config::homebrewdir}/bin",
     '/usr/bin',
     '/bin',
     '/usr/sbin',
@@ -56,11 +56,6 @@ node default {
   # Core modules, needed for most of the things.
   include dnsmasq
   include git
-
-  # Fail if FDE is not enabled.
-  if $::root_encrypted == 'no' {
-    fail('Please enable full disk encryption and try again')
-  }
 
   package {
     [
