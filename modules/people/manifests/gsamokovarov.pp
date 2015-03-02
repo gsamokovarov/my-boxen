@@ -49,6 +49,9 @@ class people::gsamokovarov {
       require  => Class['brewcask']
   }
 
+  # Hub for git.
+  include hub
+
   # Manage my passwords with 1Password.
   include onepassword
 
