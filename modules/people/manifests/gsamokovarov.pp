@@ -69,7 +69,10 @@ class people::gsamokovarov {
   include vmware_fusion
 
   # Install vagrant with VMware Fusion support. I'll add the license manually.
-  include vagrant
+  class { 'vagrant':
+    version    => '1.7.2',
+    completion => true
+  }
 
   vagrant::plugin { 'vagrant-vmware-fusion': }
 
