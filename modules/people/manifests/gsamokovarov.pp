@@ -105,6 +105,9 @@ class people::gsamokovarov {
   # A hacker friendly OSX window manager.
   include slate
 
+  # Hacker friendly way to get all you documentation, even offline.
+  include dash
+
   # Settings
   # --------
 

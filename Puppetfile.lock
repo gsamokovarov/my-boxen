@@ -19,6 +19,11 @@ GITHUBTARBALL
     caffeine (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-dash
+  specs:
+    dash (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (2.0.1)
@@ -183,6 +188,7 @@ DEPENDENCIES
   boxen (= 3.10.1)
   brewcask (>= 0)
   caffeine (>= 0)
+  dash (>= 0)
   dnsmasq (>= 0)
   dropbox (>= 0)
   eclipse (>= 0)
