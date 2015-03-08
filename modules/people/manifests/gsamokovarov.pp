@@ -30,7 +30,8 @@ class people::gsamokovarov {
       'imagemagick',
       'gifsicle',
       'moreutils',
-      'git-extras'
+      'git-extras',
+      'tree'
     ]:
   }
 
