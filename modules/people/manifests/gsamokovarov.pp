@@ -31,7 +31,8 @@ class people::gsamokovarov {
       'gifsicle',
       'moreutils',
       'git-extras',
-      'tree'
+      'tree',
+      'ssh-copy-id'
     ]:
   }
 
