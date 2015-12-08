@@ -28,7 +28,6 @@ class people::gsamokovarov {
       'ctags',
       'ag',
       'imagemagick',
-      'gifsicle',
       'moreutils',
       'git-extras',
       'tree',
@@ -56,9 +55,6 @@ class people::gsamokovarov {
 
   # Manage my passwords with 1Password.
   include onepassword
-
-  # Great alternative for Dropbox, giving you more space for free.
-  include pcloud
 
   # You know, for X apps.
   include xquartz
@@ -88,14 +84,8 @@ class people::gsamokovarov {
   # Flux is great, lowering the blue during the night helps a lot.
   include flux
 
-  # I'm probably one of the 12 people that enjoy Knock to Unlock.
-  include knock
-
   # Stops the laptop from sleeping on deploys. Live saver.
   include caffeine
-
-  # Pretty nice graphical Git client.
-  include sourcetree
 
   # Fish is my favorite shell in the moment. Install it and set it as the
   # default shell.
@@ -106,9 +96,6 @@ class people::gsamokovarov {
 
   # Easily record gifs.
   include licecap
-
-  # A hacker friendly OSX window manager.
-  include slate
 
   # Hacker friendly way to get all you documentation, even offline.
   include dash
