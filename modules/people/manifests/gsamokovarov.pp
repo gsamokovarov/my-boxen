@@ -35,23 +35,18 @@ class people::gsamokovarov {
     ]:
   }
 
-  # Install HEAD vim to get the latest rendering optimizations. They help a
-  # bit with the terminal Vim.
-  package { 'vim':
-    install_options => ['--HEAD', '--override-system-vim', '--with-lua']
+  package { 'neovim':
+    install_options => ['--HEAD', '--override-system-vim']
   }
 
-  package {
-    [
-      'skype',
-      'google-chrome',
-    ]:
-      provider => 'brewcask',
-      require  => Class['brewcask']
+  package { ['git', 'hub']:
+    install_options => ['--HEAD']
   }
 
-  # Hub for git.
-  include hub
+  package { ['skype', 'google-chrome']:
+    provider => 'brewcask',
+    require  => Class['brewcask']
+  }
 
   # Manage my passwords with 1Password.
   include onepassword
@@ -68,7 +63,7 @@ class people::gsamokovarov {
 
   # Install vagrant with VMware Fusion support. I'll add the license manually.
   class { 'vagrant':
-    version    => '1.7.2',
+    version    => '1.8.1',
     completion => true
   }
 
