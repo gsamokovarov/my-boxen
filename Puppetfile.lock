@@ -1,17 +1,17 @@
 GITHUBTARBALL
   remote: boxen/puppet-alfred
   specs:
-    alfred (1.4.0)
+    alfred (1.5.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.10.1)
+    boxen (3.11.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-brewcask
   specs:
-    brewcask (0.0.6)
+    brewcask (0.0.7)
 
 GITHUBTARBALL
   remote: boxen/puppet-caffeine
@@ -56,12 +56,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
-    gcc (2.2.0.beta3)
+    gcc (3.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (2.7.5)
+    git (2.7.92)
 
 GITHUBTARBALL
   remote: boxen/puppet-go
@@ -71,22 +71,22 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.11.6)
+    homebrew (2.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
-    hub (1.4.0)
+    hub (1.4.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
-    iterm2 (1.2.4)
+    iterm2 (1.2.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-java
   specs:
-    java (1.8.0)
+    java (1.8.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-knock
@@ -121,7 +121,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-phantomjs
   specs:
-    phantomjs (2.3.0)
+    phantomjs (3.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
@@ -131,7 +131,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-repository
   specs:
-    repository (2.3.0)
+    repository (2.4.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-slate
@@ -151,7 +151,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (3.2.2)
+    vagrant (3.3.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-viscosity
@@ -171,21 +171,21 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
-    inifile (1.2.0)
+    inifile (1.5.0)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
-    stdlib (4.5.1)
+    stdlib (4.9.1)
 
 GITHUBTARBALL
   remote: ripienaar/puppet-module-data
   specs:
-    module_data (0.0.3)
+    module_data (0.0.4)
 
 DEPENDENCIES
   alfred (>= 0)
-  boxen (= 3.10.1)
+  boxen (= 3.11.1)
   brewcask (>= 0)
   caffeine (>= 0)
   dash (>= 0)
@@ -205,7 +205,7 @@ DEPENDENCIES
   java (>= 0)
   knock (>= 0)
   licecap (>= 0)
-  module_data (= 0.0.3)
+  module_data (= 0.0.4)
   onepassword (>= 0)
   openssl (>= 0)
   osx (>= 0)

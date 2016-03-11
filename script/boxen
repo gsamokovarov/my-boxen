@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 # Run Boxen.
 
 require "pathname"
@@ -161,12 +161,6 @@ load "config/basic.rb"
 require "boxen/cli"
 
 # Okay, let's run this thing.
-
-# Homebrew can be installed in /usr/local now. And this is good, some of the
-# brew packages will work only there.
-Boxen::Preflight::Homebrew.class_eval do
-  def ok?() true end
-end
 
 # I like managing my own rbenv, so Boxen, please, shut up!
 Boxen::Preflight::Rbenv.class_eval do
