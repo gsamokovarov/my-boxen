@@ -92,6 +92,3 @@ else
     log "====> Installing gem dependencies"
     bundle install --binstubs bin --path .bundle --quiet "$@" && write_checksum
 fi
-
-# Fix the binstubs to use system ruby
-find bin -not -path 'bin/\.*' -type f -print0 | xargs -0 /usr/bin/sed -i '' 's|/usr/bin/env ruby|/usr/bin/ruby|g'
