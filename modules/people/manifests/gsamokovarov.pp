@@ -31,7 +31,9 @@ class people::gsamokovarov {
       'moreutils',
       'git-extras',
       'tree',
-      'ssh-copy-id'
+      'ssh-copy-id',
+      'diff-so-fancy',
+      'jump',
     ]:
   }
 
@@ -43,7 +45,7 @@ class people::gsamokovarov {
     install_options => ['--HEAD']
   }
 
-  package { ['skype', 'google-chrome']:
+  package { ['skype', 'google-chrome', 'dropbox']:
     provider => 'brewcask',
     require  => Class['brewcask']
   }
@@ -73,9 +75,6 @@ class people::gsamokovarov {
   # installed by default.
   include alfred
 
-  # Include viscosity as I use for a couple of VPN connections.
-  include viscosity
-
   # Flux is great, lowering the blue during the night helps a lot.
   include flux
 
@@ -85,9 +84,6 @@ class people::gsamokovarov {
   # Fish is my favorite shell in the moment. Install it and set it as the
   # default shell.
   include fish
-
-  # Include Java 7.
-  include java
 
   # Easily record gifs.
   include licecap
