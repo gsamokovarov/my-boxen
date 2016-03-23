@@ -24,14 +24,14 @@ class people::gsamokovarov {
   package {
     [
       'direnv',
-      'autojump',
       'ctags',
       'ag',
       'imagemagick',
       'moreutils',
       'git-extras',
       'tree',
-      'ssh-copy-id'
+      'ssh-copy-id',
+      'diff-so-fancy'
     ]:
   }
 
@@ -43,13 +43,22 @@ class people::gsamokovarov {
     install_options => ['--HEAD']
   }
 
-  package { ['skype', 'google-chrome']:
-    provider => 'brewcask',
-    require  => Class['brewcask']
+  package {
+    [
+      '1password',
+      'alfred',
+      'caffeine'
+      'caffeine',
+      'dash',
+      'flux',
+      'google-chrome',
+      'licecap',
+      'skype',
+      'dash'
+    ]:
+      provider => 'brewcask',
+      require  => Class['brewcask']
   }
-
-  # Manage my passwords with 1Password.
-  include onepassword
 
   # You know, for X apps.
   include xquartz
@@ -69,31 +78,9 @@ class people::gsamokovarov {
 
   vagrant::plugin { 'vagrant-vmware-fusion': }
 
-  # I bought alfred for a plasibo based productivity increase. Have it
-  # installed by default.
-  include alfred
-
-  # Include viscosity as I use for a couple of VPN connections.
-  include viscosity
-
-  # Flux is great, lowering the blue during the night helps a lot.
-  include flux
-
-  # Stops the laptop from sleeping on deploys. Live saver.
-  include caffeine
-
   # Fish is my favorite shell in the moment. Install it and set it as the
   # default shell.
   include fish
-
-  # Include Java 7.
-  include java
-
-  # Easily record gifs.
-  include licecap
-
-  # Hacker friendly way to get all you documentation, even offline.
-  include dash
 
   # Settings
   # --------
