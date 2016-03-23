@@ -31,7 +31,8 @@ class people::gsamokovarov {
       'git-extras',
       'tree',
       'ssh-copy-id',
-      'diff-so-fancy'
+      'diff-so-fancy',
+      'jump',
     ]:
   }
 
@@ -54,7 +55,7 @@ class people::gsamokovarov {
       'google-chrome',
       'licecap',
       'skype',
-      'dash'
+      'dash',
     ]:
       provider => 'brewcask',
       require  => Class['brewcask']
@@ -77,10 +78,6 @@ class people::gsamokovarov {
   }
 
   vagrant::plugin { 'vagrant-vmware-fusion': }
-
-  # Fish is my favorite shell in the moment. Install it and set it as the
-  # default shell.
-  include fish
 
   # Settings
   # --------
