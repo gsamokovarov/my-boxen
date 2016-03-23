@@ -82,12 +82,6 @@ class people::gsamokovarov {
   # Settings
   # --------
 
-  # Force file shares to use an older Samba version. My OpenELEC media center
-  # can't open the new Samba shares that came by default with Mavericks.
-  file { "${home}/Library/Preferences/nsmb.conf":
-    source => 'puppet:///modules/people/gsamokovarov/nsmb.conf'
-  }
-
   include osx::global::disable_key_press_and_hold
   include osx::global::enable_keyboard_control_access
   include osx::global::expand_print_dialog
